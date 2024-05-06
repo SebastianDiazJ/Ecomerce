@@ -8,6 +8,7 @@ function App() {
       <h1>Hola2</h1>
       <div>XD</div>
       <h1>zurita es gei</h1>
+      <h1>Hola1</h1>
     </div>
   );
 }
