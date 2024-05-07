@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import react from "react";
 
 function App() {
   return (
     <div className="App">
-      
+      <h1>hola mundo</h1>
     </div>
   );
 }
