@@ -2,6 +2,8 @@ import React from 'react'
 
 export const header = () => {
   return (
-    <div>index</div>
+    <div>   
+        <h1>header</h1>
+    </div>
   )
 }
