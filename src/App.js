@@ -1,9 +1,13 @@
 import react from "react";
+import { Header} from "./componentes/Header";
+import { ProductosLista} from "./componentes/Productos/index";
+import 'boxicons';
 
 function App() {
   return (
     <div className="App">
-      <h1>hola mundo</h1>
+      <Header/>
+      <ProductosLista/>
     </div>
   );
 }

@@ -1,9 +1,27 @@
 import React from 'react'
+import Nike from "../../images/Nike.jpg"
 
-export const header = () => {
+export const Header = () => {
   return (
-    <div>   
-        <h1>header</h1>
+   <header>
+
+    <a href="#">
+     <div className="logo">              {/* logo se reemplaza el nombre de nike por cualquiera  */}
+        <img src={Nike} alt="logo" width="150"/>
+      </div>
+    </a>
+    <ul>
+      <li>
+        <a href="#">INICIO</a>
+      </li>
+      <li>
+        <a href="#">PRODUCTOS</a>
+      </li>
+    </ul>
+    <div className="cart">
+      <box-icon name="cart" ></box-icon>
+      <span className="item__total">0</span>
     </div>
-  )
+   </header>
+  ) 
 }
