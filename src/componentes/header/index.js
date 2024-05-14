@@ -6,17 +6,17 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   return (
    <header>
-    <Link href="#">
+    <Link to="/">
      <div className="logo">              {/* logo se reemplaza el nombre de nike por cualquiera  */}
         <img src={Nike} alt="logo" width="150"/>
       </div>
       </Link>
     <ul>
       <li>
-        <a href="#">INICIO</a>
+        <Link href="/">INICIO</Link>
       </li>
       <li>
-        <a href="#">PRODUCTOS</a>
+        <Link href="/productos">PRODUCTOS</Link>
       </li>
     </ul>
     <div className="cart">
