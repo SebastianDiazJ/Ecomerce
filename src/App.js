@@ -1,18 +1,20 @@
-// En tu archivo App.js
-
-import React from 'react';
+import React from "react";
+import { Header} from "./componentes/Header";
+import 'boxicons';
 import { BrowserRouter as Router } from "react-router-dom";
-import { Paginas } from "./components/Paginas"; 
+import { Paginas } from "./componentes/Paginas";
 import { DataProvider } from "./context/Dataprovider";
 
 function App() {
   return (
     <DataProvider>
-      <div className="App">
-        <Router>
-          <Paginas />
-        </Router>
-      </div>
+    <div className="App">
+      <Router>
+       <Header/>
+
+       <Paginas/>
+      </Router>
+    </div>
     </DataProvider>
   );
 }
