@@ -1,5 +1,5 @@
 import React, { useState, useEffect, createContext } from "react";
-import Data from 'Data.js'
+import Data from './Data.js'
 export const DataContext = createContext();
 
 export const DataProvider = (props) =>{
@@ -21,8 +21,8 @@ export const DataProvider = (props) =>{
     }
 
     return(
-        <DataContext.Provider value={value}>
-        {props.children}
+        <DataContext.Provider value = {value}>
+         {props.children}
         </DataContext.Provider>
     )
 }
