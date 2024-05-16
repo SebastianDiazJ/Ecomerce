@@ -1,20 +1,16 @@
+// Paginas.js
 import React from 'react';
-import { Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Inicio } from "../Inicio";
 import { ProductosLista } from "./index";
 
-export const Paginas = () => (
-  <section>
-    <HEAD>
-          <Switch>
-            <Route path="/" exact component={Inicio} />
-            <Route path="/productos" exact component={ProductosLista} />
-          </Switch>
-
-          <Routes>
-            <Route path="/" element={<Inicio />} />
-            <Route path="/productos" element={<ProductosLista />} />
-          </Routes>
-    </HEAD>
-  </section>
-);
+export const Paginas = () => {
+    return (
+        <section>
+            <Routes>
+                <Route path='/' element={<Inicio />} />
+                <Route path='/producto' element={<ProductosLista />} />
+            </Routes>
+        </section>
+    );
+};
