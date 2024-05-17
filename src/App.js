@@ -1,16 +1,16 @@
-import react from "react";
-import { Header} from "./componentes/Header";
-import { ProductosLista} from "./componentes/Productos/index";
+import React from "react";
+import { Header } from "./componentes/Header";
 import 'boxicons';
+import { Paginas } from "./componentes/Paginas";
 
 function App() {
   return (
     <div className="App">
-      
-      <Header/>
-      <ProductosLista/>
+      <Header />
+      <Paginas />
     </div>
   );
 }
 
 export default App;
+
