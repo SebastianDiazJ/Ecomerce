@@ -271,10 +271,10 @@ header .cart span{
   border-radius: 5px;
 }
 
-.carrito__item{
+ .carrito__item{
   width: 9rem;
   
-}
+} 
 
 /*---------MEDIA ------ RESPONSIVE-- depende de la cantidad de pixeles aparece o no el inicio---*/
 @media only screen and (max-width: 600px) {
