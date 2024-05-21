@@ -260,7 +260,7 @@ header .cart span{
   grid-template-columns: 1fr 2fr 1fr 1fr;
   width: 80%;
   margin: 2rem auto;
-  box-shadow: 0 1px 10px saddlebrown;
+  box-shadow: 0 1px 10px rgb(38, 165, 13);
   border-radius: 5px;
 }
 .carrito__item div{
@@ -269,7 +269,7 @@ header .cart span{
   align-items: center;
 }
 .carrito__item img{
-  width: 10rem;
+  width: 9rem;
 }
 .carrito__item h3{
   margin-top: 1.5rem;
@@ -284,11 +284,81 @@ header .cart span{
   text-align: start;
   margin-left: -1rem;
 }
-
+.carrito__item box-icon{
+  fill:rgb(38, 165, 13);
+  width : 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: .3rem;
+}
+.carrito__item .cantidad{
+  font-size:  2rem;
+  font-weight: bold;
+}
+.carrito__item .remove__item box-icon{
+  width: 60px;
+  height: 80px;
+  fill: crimson;
+  margin-top:2rem; 
+}
+.carrito__footer{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.carrito__footer h3{
+  font-size : 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.carrito__footer .btn{
+    display: inline-block;
+    padding: .3rem 1rem;
+    font-size: 1.2rem;
+    background-color: #08a05c;
+    border-radius: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.carrito__footer .btn:hover{
+  background-color: #0f5c39;
+  color: white;
+}
 
 /*---------MEDIA ------ RESPONSIVE-- depende de la cantidad de pixeles aparece o no el inicio---*/
+@media only screen and (max-width: 1000px) {
+  .carrito__item{
+    width: 92%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .carrito{
+    width: 92%;
+    height: 100%;
+    padding: 1rem;
+  }
+  .carrito__item h3{
+    font-size: 1.2rem;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   header ul {
     display: none;
   } 
+}
+
+
+@media only screen and (max-width: 450px) {
+  .carrito__item h3{
+    display: .5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header ul {
+    display: none;
+  } 
+}
+.carrito__item .remove__item box-icon{
+  width: 30px;
+  height: 70px;
 }
