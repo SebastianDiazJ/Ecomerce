@@ -42,9 +42,18 @@ export const ProductoDetalles = () => {
                                 <p>Tamaño</p>
                             </div>
                         </div>
-                        <button>Añadir al carrito</button>
-                        <img src={detalle.image} alt={detalle.title} />  {/* Acceso directo a la ruta de la imagen */}
-                        <input type="range" min="1" max="36" />
+                        <img src={detalle.image} alt={detalle.title} />
+                        <div classname="description"></div>
+                        <p><b>decription:</b>El calzado se refiere a cualquier tipo de 
+                        accesorio o prenda diseñada para proteger y cubrir los pies. El calzado puede variar 
+                        ampliamente en diseño, estilo, materiales y función, y
+                        es esencial para mantener la comodidad y la salud de los
+                        pies mientras se realizan diversas actividades.<br/>El calzado se refiere a cualquier tipo de 
+                        accesorio o prenda diseñada para proteger y cubrir los pies. El calzado puede variar 
+                        ampliamente en diseño, estilo, materiales y función, y
+                        es esencial para mantener la comodidad y la salud de los
+                        pies mientras se realizan diversas actividades.</p>
+                        <br/><br/><br/>
                     </div>
                 ) : (
                     <p>Cargando...</p>
