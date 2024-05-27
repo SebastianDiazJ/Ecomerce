@@ -1,15 +1,17 @@
 import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { Inicio } from "../Inicio";
 import { ProductosLista } from "./index";
+import { ProductoDetalles} from "./ProductoDetalles";
 
 export const Paginas = () => {
     return (
         <section>
-            <Routes>
-                <Route path='/' element={<Inicio />} />
-                <Route path='/productos' element={<ProductosLista />} />
-            </Routes>
+            <Switch>
+                <Route path="/" exact component={Inicio } />
+                <Route path="/productos" exact elemnt={ProductosLista } />
+                <Route path="/producto:id" exact elemnt={ProductoDetalles} />
+            </Switch>
         </section>
     );
 };
