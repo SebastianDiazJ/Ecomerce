@@ -25,23 +25,6 @@ export const ProductoDetalles = () => {
                     <div className="detalles">
                         <h2>{detalle.title}</h2>
                         <p className="price">${detalle.price}</p>
-                        <div className="grind">
-                            <p className="nuevo">Nuevo</p>
-                            <div className="size">
-                                <select placeholder="Tamaño">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                </select>
-                                <p>Tamaño</p>
-                            </div>
-                        </div>
                         <img src={detalle.image} alt={detalle.title} />
                         <div classname="description"></div>
                         <p><b>decription:</b>El calzado se refiere a cualquier tipo de 
